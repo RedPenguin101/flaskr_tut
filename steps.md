@@ -104,4 +104,24 @@ input and password tags use required
 
 set up login template
 
-run the server and try registering a user
+run the server and try registering a user (though you don't have an index yet so you can't login)
+
+## static files
+add a static folder to flaskr, and put in a style.css. base.html already has a link to it
+
+## blog bluprint
+create blog.py
+register it in init (also add a add_url_rule which redirects the index to the route, since its the main thing)
+
+create the index function
+create index template (in templates/blog/index.html)
+
+create a get_post moethod in blog.py
+
+abort() raises an exception
+
+create the update view, takes an argument id
+
+set up the update template. This will have 2 forms, the first similar to the one already seen, the 2nd with a button with a delete action.
+
+create the delete view. It actually uses the update template, and is requested via the deliete button we put in that. It only takes a POST method

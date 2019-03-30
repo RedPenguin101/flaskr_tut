@@ -80,3 +80,28 @@ add the function `load_logged_in_user()` to fetch the user data when handling re
 create logout function
 
 create a login_required decorator
+
+## Templates
+store in templates/ in flaskr
+
+Flask uses Jinja.
+
+{{}} are expressions
+{% %} are flow statements (if for)
+blocks are denoted by start and end tags, not indentation.
+g is automatically available in templates for useage (eg. g.user)
+
+create a base.html file
+
+special tags for base:
+{% block title %} (match with {% extends 'base.html' %})
+{% block header %}
+{% block content %}
+
+folder structure for templates should follow blueprints: create a folder for auth and register.html
+
+input and password tags use required
+
+set up login template
+
+run the server and try registering a user
